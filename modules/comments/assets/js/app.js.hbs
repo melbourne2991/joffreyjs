@@ -1,0 +1,13 @@
+'use strict';
+// Declare app level module which depends on filters, and services
+angular.module('{{module_name}}', [
+    'ui.router',
+    '{{module_name}}.filters',
+    '{{module_name}}.services',
+    '{{module_name}}.directives',
+    '{{module_name}}.controllers'
+]).config([
+    '$stateProvider',
+    function ($stateProvider) {
+    }
+]);

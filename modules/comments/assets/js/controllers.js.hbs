@@ -1,0 +1,11 @@
+'use strict';
+/* Controllers */
+angular.module('{{module_name}}Module.controllers', ['{{module_name}}Module.services']).controller('MainController', [
+    '$scope',
+    '{{module_name}}Factory',
+    function ($scope, {{module_name}}Factory) {
+        {{module_name}}Factory.getListings().then(function (result) {
+            $scope.{{module_name}} = result.data;
+        });
+    }
+]);

@@ -1,0 +1,14 @@
+'use strict';
+/* Services */
+// Demonstrate how to register services
+// In this case it is a simple value service.
+angular.module('{{module_name}}Module.services', []).factory('{{module_name}}Factory', [
+    '$http',
+    function ($http) {
+        return {
+            getListings: function () {
+                return $http.get('/api/tests');
+            }
+        };
+    }
+]);

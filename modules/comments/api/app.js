@@ -4,5 +4,9 @@ module.exports = function (express) {
     api.get('/test', function (req, res, next) {
         res.send('Success');
     });
+
+    api.get('/test2', function(req, res, next) {
+    	res.send('Success');
+    });
     return api;
 };
