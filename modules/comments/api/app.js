@@ -1,4 +1,4 @@
-var util = require('util');
+
 module.exports = function (express) {
     var api = express.Router();
     api.get('/test', function (req, res, next) {
@@ -10,3 +10,16 @@ module.exports = function (express) {
     });
     return api;
 };
+
+// var root_path = process.cwd();
+// var Joffrey = require(root_path + '/lib/init');
+
+// module.exports = function (express) {
+//     var api = Joffrey.moduleRouter();
+
+
+//     api.get('test');
+
+
+//     return api;
+// };
